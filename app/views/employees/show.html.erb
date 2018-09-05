@@ -1,0 +1,11 @@
+<img src=<%= @employee.img_url%>>
+<h1> <%= @employee.full_name %> </h1>
+<h2> <%= @employee.alias %> </h2>
+<h3> <%= @employee.title %> </h3>
+<h3> <%= @employee.office %> </h3>
+
+<h3><%= link_to @employee.dog.name, @employee.dog %></h3><br></br>
+
+<%= link_to "Edit Employee", edit_employee_path %><br>
+
+<%= button_to "Delete Employee", @employee, method: "delete" %>
